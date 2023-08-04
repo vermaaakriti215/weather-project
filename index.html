@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7cdcd9514c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="searching" id="form-input">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Type a city..."
+              autocomplete="off"
+              autofocus="on"
+              class="form-control shadow-sm"
+              id="city-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-dark"
+            />
+          </div>
+          <div class="col-3">
+            <button type="button">Current</button>
+          </div>
+        </div>
+      </form>
+      <h1>Prayagraj</h1>
+      <div class="row">
+        <div class="col-3">
+          <i class="fa-solid fa-cloud cloudy"></i>
+          <span id="temp-input">33</span>
+          <span class="small"
+            ><a href="" id="deg-c"> &deg;C</a
+            ><span class="grey">|<a href="" id="deg-f">&deg;F</a></span>
+          </span>
+        </div>
+        <div class="col-5">
+          <ul class="list">
+            <li>Humidity: <span id="humidity-input">77</span>%</li>
+            <li>Wind: <span id="wind-input">6 </span>km/h</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <span class="corner">
+            Weather <br /><span class="grey"
+              ><span class="dateChange" id="date-time"> Tuesday, 1:00pm</span
+              ><br /><span id="description">Cloudy</span></span
+            >
+          </span>
+        </div>
+      </div>
+      <div class="me">Coded by Aakriti Verma</div>
+    </div>
+    <script src="src/javascript.js"></script>
+  </body>
+</html>
