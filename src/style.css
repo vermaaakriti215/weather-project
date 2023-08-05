@@ -51,6 +51,6 @@ button:hover {
   text-align: center;
   opacity: 0.4;
 }
-a {
+.github-link {
   text-decoration: underline;
 }
