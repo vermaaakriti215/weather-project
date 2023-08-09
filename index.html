@@ -30,64 +30,69 @@
   </head>
   <body>
     <div class="container">
-      <form class="searching" id="form-input">
+      <div class="content">
+        <form class="searching" id="form-input">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city..."
+                autocomplete="off"
+                autofocus="on"
+                class="form-control shadow-sm"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-dark"
+              />
+            </div>
+            <div class="col-3">
+              <button type="button">Current</button>
+            </div>
+          </div>
+        </form>
+        <h1>Prayagraj</h1>
         <div class="row">
-          <div class="col-6">
-            <input
-              type="search"
-              placeholder="Type a city..."
-              autocomplete="off"
-              autofocus="on"
-              class="form-control shadow-sm"
-              id="city-input"
-            />
-          </div>
           <div class="col-3">
-            <input
-              type="submit"
-              value="Search"
-              class="form-control btn btn-dark"
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="Clear"
+              id="cloud-icon"
             />
+            <span id="temp-input">33</span>
+            <span class="small">
+              &deg;C<span class="grey">|<a href="" id="deg-f">&deg;F</a></span>
+            </span>
           </div>
-          <div class="col-3">
-            <button type="button">Current</button>
+          <div class="col-5">
+            <ul class="list">
+              <li>Humidity: <span id="humidity-input">77</span>%</li>
+              <li>Wind: <span id="wind-input">6 </span>km/h</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <span class="corner">
+              Weather <br /><span class="grey"
+                ><span class="dateChange" id="date-time"> Tuesday, 1:00pm</span
+                ><br /><span id="description">Cloudy</span></span
+              >
+            </span>
           </div>
         </div>
-      </form>
-      <h1>Prayagraj</h1>
-      <div class="row">
-        <div class="col-3">
-          <i class="fa-solid fa-cloud cloudy"></i>
-          <span id="temp-input">33</span>
-          <span class="small"
-            ><a href="" id="deg-c"> &deg;C</a
-            ><span class="grey">|<a href="" id="deg-f">&deg;F</a></span>
-          </span>
+        <div class="me">
+          <a
+            href="https://github.com/vermaaakriti215/weather-project"
+            target="_blank"
+            class="github-link"
+          >
+            Open source code</a
+          >
+          by Aakriti Verma
         </div>
-        <div class="col-5">
-          <ul class="list">
-            <li>Humidity: <span id="humidity-input">77</span>%</li>
-            <li>Wind: <span id="wind-input">6 </span>km/h</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <span class="corner">
-            Weather <br /><span class="grey"
-              ><span class="dateChange" id="date-time"> Tuesday, 1:00pm</span
-              ><br /><span id="description">Cloudy</span></span
-            >
-          </span>
-        </div>
-      </div>
-      <div class="me">
-        <a
-          href="https://github.com/vermaaakriti215/weather-project"
-          target="_blank"
-          class="github-link"
-        >
-          Open source code</a
-        >
-        by Aakriti Verma
       </div>
     </div>
     <script src="src/javascript.js"></script>

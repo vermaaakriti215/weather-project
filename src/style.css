@@ -1,10 +1,12 @@
 body {
   font-family: "Ysabeau SC", sans-serif;
-  padding: 100px;
+}
+.content {
+  max-width: 700px;
   margin: 200px auto;
+  padding: 30px;
   border-radius: 20px;
-  max-width: 900px;
-  border: 5px solid #919191;
+  border: 3px solid #919191;
 }
 a {
   color: grey;
@@ -17,20 +19,20 @@ h1 {
   font-size: 30px;
   color: #343434;
 }
-.container .cloudy {
+.cloudy {
   font-size: 45px;
 }
-.container .small {
+.small {
   font-size: 20px;
   position: absolute;
 }
 .grey {
   color: grey;
 }
-.container .corner {
+.corner {
   font-size: 20px;
 }
-.container .list {
+.list {
   list-style-type: none;
 }
 .searching {
@@ -50,8 +52,9 @@ button:hover {
 }
 .me {
   text-align: center;
-  opacity: 0.4;
+  opacity: 0.8;
 }
 .github-link {
-  text-decoration: underline;
+  font-weight: bold;
+  color: black;
 }

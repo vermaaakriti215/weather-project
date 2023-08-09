@@ -38,8 +38,21 @@ function getTemp(response) {
   wind.innerHTML = response.data.wind.speed;
   let des = document.querySelector("#description");
   des.innerHTML = response.data.weather[0].description;
-}
 
+  let icon = document.querySelector("#cloud-icon");
+  icon.setAttribute(
+    "src",
+    "https://openweathermap.org/img/wn/" +
+      response.data.weather[0].icon +
+      "@2x.png"
+  );
+  icon.setAttribute(
+    "alt",
+    "https://openweathermap.org/img/wn/" +
+      response.data.weather[0].description +
+      "@2x.png"
+  );
+}
 function city(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#city-input");
