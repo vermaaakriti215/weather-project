@@ -49,6 +49,7 @@ button:hover {
   transition: all 250ms ease-in-out;
 }
 .me {
+  margin-top: 20px;
   text-align: center;
   opacity: 0.8;
 }
@@ -65,4 +66,18 @@ button:hover {
 }
 ul {
   color: black;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forcast-date {
+  font-size: 18px;
+  color: black;
+}
+.min-temp {
+  opacity: 0.7;
+}
+.weather-forecast-temp {
+  font-size: 16px;
 }
