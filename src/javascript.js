@@ -26,6 +26,32 @@ let dateTime = document.querySelector(
   "dateChange",
   changeHeading2(dayNow, time, minutes)
 );
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+              <div class="weather-forcast-date">${day}</div>
+              <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="36"
+              />
+              <div class="weather-forecast-temp">
+                <span class="max-temp">18&deg;</span
+                ><span class="min-temp">|12&deg;</span>
+              </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function getTemp(response) {
   cTemp = response.data.main.temp;
   let cityName = document.querySelector("h1");
@@ -121,5 +147,5 @@ let fLink = document.querySelector("#deg-f");
 fLink.addEventListener("click", showFTemp);
 let cLink = document.querySelector("#deg-c");
 cLink.addEventListener("click", showCTemp);
-
+displayForecast();
 search("Allahabad");
