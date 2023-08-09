@@ -10,7 +10,7 @@ body {
   border: 2px solid #6e6e6e;
 }
 a {
-  color: grey;
+  color: rgb(102, 101, 101);
   text-decoration: none;
 }
 h1 {
@@ -26,9 +26,6 @@ h1 {
 .small {
   font-size: 20px;
   position: absolute;
-}
-.grey {
-  color: #292929;
 }
 .corner {
   font-size: 20px;
