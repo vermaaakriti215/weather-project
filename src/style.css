@@ -1,12 +1,13 @@
 body {
   font-family: "Ysabeau SC", sans-serif;
+  background-size: 100%;
 }
 .content {
   max-width: 700px;
   margin: 200px auto;
   padding: 30px;
   border-radius: 20px;
-  border: 3px solid #919191;
+  border: 2px solid #6e6e6e;
 }
 a {
   color: grey;
@@ -27,7 +28,7 @@ h1 {
   position: absolute;
 }
 .grey {
-  color: grey;
+  color: #292929;
 }
 .corner {
   font-size: 20px;
@@ -41,7 +42,7 @@ h1 {
 button {
   padding: 1px 25px;
   border-radius: 6px;
-  background-color: #292929;
+  background-color: #212529;
   line-height: 33px;
   color: white;
 }
@@ -64,4 +65,7 @@ button:hover {
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+ul {
+  color: black;
 }
