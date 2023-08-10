@@ -56,8 +56,8 @@ function displayForecast(response) {
 }
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "722c38b8ba6b77e46ac2f3fa43642c17";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiKey = "8c48afa47a9a9c24f3500c7039d50aaa";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -128,7 +128,7 @@ function search(city) {
   let apiKey = "722c38b8ba6b77e46ac2f3fa43642c17";
   let apiUrl =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
-    searchInput.value +
+    city +
     "&appid=" +
     apiKey +
     "&units=metric";
@@ -157,5 +157,4 @@ let fLink = document.querySelector("#deg-f");
 fLink.addEventListener("click", showFTemp);
 let cLink = document.querySelector("#deg-c");
 cLink.addEventListener("click", showCTemp);
-displayForecast();
 search("Allahabad");
