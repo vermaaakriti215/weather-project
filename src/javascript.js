@@ -150,27 +150,9 @@ function search(city) {
     "&units=metric";
   axios.get(apiUrl).then(getTemp);
 }
-function showCTemp(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temp-input");
-  tempElement.innerHTML = Math.round(cTemp);
-}
-function showFTemp(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temp-input");
-  //remove active class
-  cLink.classList.remove("active");
-  fLink.classList.add("active");
-  let Ftepm = (cTemp * 9) / 5 + 32;
-  tempElement.innerHTML = Math.round(Ftepm);
-}
 let cTemp = null;
 let form = document.querySelector("#form-input");
 form.addEventListener("submit", city);
 let buttonWork = document.querySelector("button");
 buttonWork.addEventListener("click", getlocation);
-let fLink = document.querySelector("#deg-f");
-fLink.addEventListener("click", showFTemp);
-let cLink = document.querySelector("#deg-c");
-cLink.addEventListener("click", showCTemp);
 search("Allahabad");
